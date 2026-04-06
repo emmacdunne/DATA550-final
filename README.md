@@ -1,3 +1,11 @@
+## Package setup
+
+This project uses `renv` to manage package versions.
+
+To restore the required R package environment, run:
+
+`make install`
+
 # Project Description
 
 This repository contains the final project analysis and report.
