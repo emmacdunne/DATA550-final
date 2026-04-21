@@ -6,3 +6,7 @@ output/final_report.html: code/01_clean_data.R code/02_make_table.R code/03_make
 	
 install:
 	Rscript -e "renv::restore()"
+	
+report:
+	mkdir -p report
+	docker run --rm -v "$$(pwd)/report:/home/rstudio/project/report" emmadunne/data550-final

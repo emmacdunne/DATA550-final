@@ -35,7 +35,9 @@ This repository contains the final project analysis and report.
 	- contains generated output files used in the report
 	- includes the cleaned dataset, required table, required figure, and rendered final report
 - `Makefile`
-	- builds the final report from the command line
+  - includes rules to locally generate the report and rules for Docker report generation
+- `Dockerfile`
+  - builds the Docker image used to fully reproduce the report
 
 # Generating the Final Report
 
@@ -46,3 +48,27 @@ To generate the final report, run:
 This command runs the scripts in `code/` and produces the final report in:
 
 `output/final_report.html`
+
+# Build the Docker Image
+
+To build the Docker image locally, run:
+
+`docker build -t emmadunne/data550-final .`
+
+# DockerHub Image
+
+Public DockerHub repository:
+
+`https://hub.docker.com/r/emmadunne/data550-final`
+
+# Generate the Report with Docker
+
+To generate the report using the Docker image, run:
+
+`make report`
+
+This command runs the container and saves the compiled report in the local report folder.
+
+After the command finishes, the compiled report will be available in:
+
+`report/final_report.html`
