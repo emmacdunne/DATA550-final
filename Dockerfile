@@ -14,8 +14,6 @@ ENV RENV_PATHS_CACHE renv/.cache
 
 RUN Rscript -e "renv::restore(prompt = FALSE)"
 
-###### DO NOT EDIT STAGE 1 BUILD LINES ABOVE  (this was from class) ######
-
 FROM rocker/tidyverse:4.5.1
 
 RUN mkdir /home/rstudio/project
