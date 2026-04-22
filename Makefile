@@ -10,3 +10,7 @@ install:
 report:
 	mkdir -p report
 	docker run --rm -v "$$(pwd)/report:/home/rstudio/project/report" emmadunne/data550-final
+	
+report_windows:
+	mkdir -p report
+	docker run --rm -v "/$$(pwd)/report:/home/rstudio/project/report" emmadunne/data550-final

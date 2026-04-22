@@ -65,7 +65,13 @@ Public DockerHub repository:
 
 To generate the report using the Docker image, run:
 
+On Mac/Linux:
+
 `make report`
+
+On Windows:
+
+`make report_windows`
 
 This command runs the container and saves the compiled report in the local report folder.
 
