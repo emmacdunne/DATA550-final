@@ -38,6 +38,8 @@ This repository contains the final project analysis and report.
   - includes rules to locally generate the report and rules for Docker report generation
 - `Dockerfile`
   - builds the Docker image used to fully reproduce the report
+- `report/`
+  - holds the final compileded report
 
 # Generating the Final Report
 
@@ -51,11 +53,9 @@ This command runs the scripts in `code/` and produces the final report in:
 
 # Build the Docker Image
 
-To build the Docker image locally, run:
+To build the Docker image locally, run: 
 
 `docker build -t emmadunne/data550-final .`
-
-# DockerHub Image
 
 Public DockerHub repository:
 
